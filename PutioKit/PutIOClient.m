@@ -23,7 +23,8 @@ static PutIOClient *_sharedClient = nil;
 + (PutIOClient *)sharedClient {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[PutIOClient alloc] init];
+        _sharedClient = [[PutIOClient alloc] initWithBaseURL:[NSURL URLWithString:PKAPIRootURL]];
+
         _sharedClient.v2Client = [V2PutIOAPIClient setup];
     });
 
