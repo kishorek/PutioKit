@@ -1,3 +1,7 @@
+##KishoreK's update
+
+Nothing much is changed except a small fix to adopt my workspace. Always refer to the original PutioKit unless you are using my fork of Puttio.
+
 # PutioKit
 
 ![Project status](http://stillmaintained.com/ahmet/PutioKit.png)
